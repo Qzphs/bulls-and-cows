@@ -1,15 +1,14 @@
 import itertools
 
-from game import (
-    Game,
-    IllegalActionError,
+from game import Game, IllegalActionError
+from game.events import GameWon, GameLost, GameDrawn
+from game.modes import (
     Singleplayer,
     VersusComputer,
     VersusEasy,
     VersusMedium,
     VersusHard,
 )
-from game.events import GameWon, GameLost, GameDrawn
 
 
 class ReplayWriter:

@@ -1,4 +1,5 @@
-from game import Code, IllegalActionError, VersusComputer
+from game.modes import VersusComputer
+from game import Code, IllegalActionError
 from ui.command import Command
 from ui.ui import Ui
 

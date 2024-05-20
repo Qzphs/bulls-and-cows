@@ -1,10 +1,5 @@
-from game import (
-    IllegalActionError,
-    Singleplayer,
-    VersusEasy,
-    VersusMedium,
-    VersusHard,
-)
+from game.modes import Singleplayer, VersusEasy, VersusMedium, VersusHard
+from game import IllegalActionError
 from ui.command import Command
 from ui.ui import Ui
 
