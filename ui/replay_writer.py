@@ -60,9 +60,9 @@ class ReplayWriter:
 
         # Starting player
         if len(game.ai_player.guesses) < len(game.human_player.guesses):
-            buffer.append("Player guesses first.\n\n")
-        elif len(game.ai_player.guesses) > len(game.human_player.guesses):
             buffer.append("AI guesses first.\n\n")
+        elif len(game.ai_player.guesses) > len(game.human_player.guesses):
+            buffer.append("Player guesses first.\n\n")
         elif game.ai_player.solved:
             buffer.append("AI guesses first.\n\n")
         elif game.human_player.solved:
