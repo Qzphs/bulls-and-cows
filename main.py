@@ -36,4 +36,4 @@ def cli():
             print(ui.output.get(), end="")
 
 
-bot()
+cli()
