@@ -1,0 +1,5 @@
+*.pyc
+channel.txt
+replays/*
+token.txt
+venv/*
