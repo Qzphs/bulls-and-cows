@@ -23,4 +23,4 @@ class PlayGame(Command):
         elif mode == "hard":
             ui.game = VersusHard()
         else:
-            raise IllegalActionError(f"unknown gamemode: '{mode}'")
+            raise IllegalActionError(f"unknown gamemode '{mode}'")

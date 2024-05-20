@@ -28,9 +28,9 @@ def cli():
                 command.execute(ui, prompt)
                 break
             else:
-                print(f"unknown command {prompt}")
+                ui.output.add(f"unknown command '{prompt}'\n")
         except (IllegalActionError, ValueError) as error:
-            print(str(error))
+            ui.output.add(f"{error.__class__.__name__}: {error}\n")
         ui.display_prompt()
         if ui.output:
             print(ui.output.get(), end="")

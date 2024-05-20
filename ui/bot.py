@@ -37,7 +37,7 @@ class Bot(Client):
                 command.execute(self.ui, message.content)
                 break
             else:
-                self.ui.output.add(f"unknown command: '{message.content}'\n")
+                self.ui.output.add(f"unknown command '{message.content}'\n")
         except (IllegalActionError, ValueError) as error:
             self.ui.output.add(f"{error.__class__.__name__}: {error}\n")
         self.ui.display_prompt()
