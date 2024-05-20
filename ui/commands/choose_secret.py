@@ -17,3 +17,10 @@ class ChooseSecret(Command):
             raise IllegalActionError("secret can only be set in versus modes")
         code = Code(prompt.removeprefix(self.name + " "))
         ui.game.choose_secret(code)
+
+
+class ChooseSecretShort(ChooseSecret):
+
+    @property
+    def name(self):
+        return ".s"

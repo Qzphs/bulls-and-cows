@@ -14,3 +14,10 @@ class ChooseGuess(Command):
             raise IllegalActionError("game not started")
         code = Code(prompt.removeprefix(self.name + " "))
         ui.game.choose_guess(code)
+
+
+class ChooseGuessShort(ChooseGuess):
+
+    @property
+    def name(self):
+        return ".g"
